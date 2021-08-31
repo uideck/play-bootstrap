@@ -1,0 +1,31 @@
+/* ======================
+    DEFAULT CSS
+========================= */
+
+// Margin-top
+@for $i from 1 through 45 {
+  .mt-#{5 * $i} {
+    margin-top: 5px * $i;
+  }
+}
+
+// Margin-bottom
+@for $i from 1 through 45 {
+  .mb-#{5 * $i} {
+    margin-bottom: 5px * $i;
+  }
+}
+
+// Padding-top
+@for $i from 1 through 45 {
+  .pt-#{5 * $i} {
+    padding-top: 5px * $i;
+  }
+}
+
+// Padding-bottom
+@for $i from 1 through 45 {
+  .pb-#{5 * $i} {
+    padding-bottom: 5px * $i;
+  }
+}

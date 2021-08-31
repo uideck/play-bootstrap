@@ -1,0 +1,341 @@
+/*===========================
+  COMMON css 
+===========================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+  --body-color: #637381;
+  --heading-color: #212b36;
+  --primary-color: #3056d3;
+  --white: #ffffff;
+}
+
+body {
+  font-family: var(--body-font);
+  font-weight: normal;
+  font-style: normal;
+  color: var(--body-color);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button,
+input,
+textarea {
+  @include transition(0.3s);
+}
+
+a,
+a:focus,
+input:focus,
+textarea:focus,
+button:focus,
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--body-color);
+  margin: 0px;
+}
+
+.bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/*===== All Button Style =====*/
+
+.ud-main-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 15px 25px;
+  border: 1px solid transparent;
+  color: var(--white);
+  cursor: pointer;
+  z-index: 5;
+  @include transition(0.4s);
+  background: var(--primary-color);
+
+  &:hover {
+    color: var(--white);
+    background: var(--heading-color);
+  }
+}
+
+.container {
+  @media #{$xs} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: var(--primary-color);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+  color: var(--white);
+
+  &:hover {
+    color: var(--white);
+    background: var(--heading-color);
+  }
+}
+
+/*===== All Preloader Style =====*/
+
+.ud-preloader {
+  /* Body Overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+  /* Change Background Color */
+  background: var(--white);
+  z-index: 99999;
+
+  & .ud-loader {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    & .ud-spinner {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 64px;
+      margin-left: -32px;
+      z-index: 18;
+      pointer-events: none;
+
+      & .ud-spinner-container {
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        padding-bottom: 100%;
+        top: 50%;
+        left: 50%;
+        margin-top: -50%;
+        margin-left: -50%;
+        @include animation(ud-spinner-linspin 1568.23529647ms linear infinite);
+
+        & .ud-spinner-rotator {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          @include animation(
+            ud-spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite
+              both
+          );
+
+          & .ud-spinner-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            right: 50%;
+          }
+
+          & .ud-spinner-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    & .ud-spinner-circle {
+      box-sizing: border-box;
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      border-style: solid;
+      /* Spinner Color */
+      border-color: $theme-color $theme-color $border-color;
+      border-radius: 50%;
+      border-width: 6px;
+    }
+
+    & .ud-spinner-left {
+      & .spinner-circle {
+        left: 0;
+        right: -100%;
+        border-right-color: $border-color;
+        @include animation(
+          ud-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
+        );
+      }
+    }
+
+    & .ud-spinner-right {
+      & .ud-spinner-circle {
+        left: -100%;
+        right: 0;
+        border-left-color: $border-color;
+        @include animation(
+          ud-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
+        );
+      }
+    }
+  }
+}
+
+/* Preloader Animations */
+
+@keyframes ud-spinner-linspin {
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+@keyframes ud-spinner-easespin {
+  12.5% {
+    @include transform(rotate(135deg));
+  }
+  25% {
+    @include transform(rotate(270deg));
+  }
+  37.5% {
+    @include transform(rotate(405deg));
+  }
+  50% {
+    @include transform(rotate(540deg));
+  }
+  62.5% {
+    @include transform(rotate(675deg));
+  }
+  75% {
+    @include transform(rotate(810deg));
+  }
+  87.5% {
+    @include transform(rotate(945deg));
+  }
+  to {
+    @include transform(rotate(1080deg));
+  }
+}
+
+@keyframes ud-spinner-left-spin {
+  0% {
+    @include transform(rotate(130deg));
+  }
+  50% {
+    @include transform(rotate(-5deg));
+  }
+  to {
+    @include transform(rotate(130deg));
+  }
+}
+
+@keyframes ud-right-spin {
+  0% {
+    @include transform(rotate(-130deg));
+  }
+  50% {
+    @include transform(rotate(5deg));
+  }
+  to {
+    @include transform(rotate(-130deg));
+  }
+}

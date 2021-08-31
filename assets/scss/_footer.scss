@@ -1,0 +1,162 @@
+/* ===== Footer CSS ===== */
+
+.ud-footer {
+  background: var(--heading-color);
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+
+    &.shape-1 {
+      top: 0;
+      left: 0;
+    }
+
+    &.shape-2 {
+      top: 0;
+      right: 0;
+    }
+
+    &.shape-3 {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.ud-widget {
+  margin-bottom: 50px;
+
+  .ud-footer-logo {
+    max-width: 160px;
+    display: block;
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ud-widget-desc {
+    font-size: 15px;
+    line-height: 24px;
+    color: #f3f4fe;
+    margin-bottom: 30px;
+    max-width: 260px;
+  }
+
+  .ud-widget-socials {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 16px;
+      color: #dddddd;
+      margin-right: 20px;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .ud-widget-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: var(--white);
+  }
+
+  .ud-widget-links {
+    a {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 30px;
+      color: #f3f4fe;
+
+      &:hover {
+        color: var(--primary-color);
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .ud-widget-blog {
+    .ud-latest-blog {
+      margin-bottom: 30px;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          .ud-blog-title {
+            color: var(--primary-color);
+          }
+        }
+
+        .ud-blog-image {
+          width: 70px;
+          height: 48px;
+          border-radius: 3px;
+          margin-right: 20px;
+        }
+
+        .ud-blog-title {
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+          color: #f3f4fe;
+          @include transition(0.3s);
+        }
+      }
+    }
+  }
+}
+
+.ud-footer-bottom {
+  padding: 35px 0;
+  border-top: 1px solid rgba(136, 144, 164, 0.43);
+
+  .ud-footer-bottom-left {
+    display: flex;
+    align-items: center;
+
+    @media #{$xs} {
+      justify-content: center;
+    }
+
+    a {
+      font-weight: normal;
+      font-size: 15px;
+      color: #f3f4fe;
+      margin-right: 30px;
+      display: inline-block;
+
+      @media #{$xs} {
+        margin: 0px 8px 8px;
+      }
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .ud-footer-bottom-right {
+    text-align: right;
+    font-weight: normal;
+    font-size: 15px;
+    color: #f3f4fe;
+
+    @media #{$xs} {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}

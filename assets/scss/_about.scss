@@ -1,0 +1,74 @@
+/* ===== About CSS ===== */
+
+.ud-about {
+  background: #f3f4fe;
+  padding: 120px 0;
+
+  @media #{$xs} {
+    padding: 80px 0;
+  }
+}
+
+.ud-about-wrapper {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$md, $xs} {
+    display: block;
+  }
+}
+
+.ud-about-content-wrapper {
+  padding: 70px;
+
+  @media #{$xs} {
+    padding: 50px 30px;
+  }
+
+  @media #{$sm} {
+    padding: 50px;
+  }
+}
+
+.ud-about-content {
+  max-width: 500px;
+
+  .tag {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: 5px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+
+    @media #{$xs} {
+      font-size: 26px;
+      line-height: 38px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+}
+
+.ud-about-image {
+  @media #{$md, $xs} {
+    text-align: center;
+  }
+}

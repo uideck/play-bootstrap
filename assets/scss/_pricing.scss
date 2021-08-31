@@ -1,0 +1,125 @@
+/* ===== Pricing CSS ===== */
+
+.ud-pricing {
+  padding-top: 120px;
+  padding-bottom: 90px;
+
+  @media #{$xs} {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+.ud-single-pricing {
+  margin-bottom: 40px;
+  background: var(--white);
+  border: 2px solid #d4deff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 45px 30px;
+  position: relative;
+
+  &.active {
+    background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+    border: none;
+    padding: 55px 30px;
+
+    .ud-pricing-header {
+      h3,
+      h4 {
+        color: var(--white);
+      }
+    }
+    .ud-pricing-body {
+      li {
+        color: var(--white);
+      }
+    }
+  }
+
+  &.first-item::after,
+  &.last-item::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+  }
+
+  &.first-item::after {
+    background: var(--primary-color);
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0px 55px 0px 8px;
+  }
+
+  &.last-item::after {
+    background: #13c296;
+    top: -2px;
+    right: -2px;
+    border-radius: 0px 8px 0px 55px;
+  }
+
+  .ud-popular-tag {
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--white);
+    border-radius: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+  }
+
+  .ud-pricing-header {
+    h3 {
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 26px;
+      letter-spacing: 0.5px;
+      color: var(--primary-color);
+      margin-bottom: 40px;
+    }
+  }
+
+  .ud-pricing-body {
+    margin-bottom: 40px;
+
+    li {
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .ud-main-btn {
+    border-radius: 30px;
+    padding: 15px 40px;
+  }
+
+  .ud-border-btn {
+    border: 1px solid #d4deff;
+    color: var(--primary-color);
+    background: var(--white);
+
+    &:hover {
+      color: var(--white);
+      background: var(--primary-color);
+    }
+  }
+  .ud-white-btn {
+    background: var(--white);
+    color: var(--heading-color);
+
+    &:hover {
+      color: var(--white);
+      background: var(--heading-color);
+    }
+  }
+}

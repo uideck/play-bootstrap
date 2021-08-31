@@ -1,0 +1,80 @@
+/* ===== FAQ CSS ===== */
+
+.ud-faq {
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background: #f3f4fe;
+  position: relative;
+  z-index: 1;
+
+  @media #{$xs } {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.ud-single-faq {
+  background: var(--white);
+  border: 1px solid #f3f4fe;
+  box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  .ud-faq-btn {
+    text-align: left;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--heading-color);
+    opacity: 0.88;
+    padding: 30px;
+
+    @media #{$lg, $xs} {
+      padding: 15px;
+    }
+
+    &.collapsed {
+      span.icon i {
+        @include transform(rotate(0deg));
+      }
+    }
+
+    span.icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background: rgba(48, 86, 211, 0.06);
+      border-radius: 10px;
+      color: var(--primary-color);
+      margin-right: 24px;
+
+      i {
+        @include transform(rotate(180deg));
+        transition: all 0.3s;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .ud-faq-body {
+    padding: 0px 30px 40px 95px;
+
+    @media #{$lg, $xs} {
+      padding: 0px 16px 20px 82px;
+    }
+  }
+}

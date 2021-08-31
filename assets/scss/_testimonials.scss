@@ -1,0 +1,107 @@
+/* ===== Testimonials CSS ===== */
+.ud-testimonials {
+  padding-top: 120px;
+
+  @media #{$xs} {
+    padding-top: 80px;
+  }
+}
+
+.ud-single-testimonial {
+  padding: 30px;
+  box-shadow: 0px 60px 120px -20px #ebeffd;
+  background: var(--white);
+  margin-bottom: 50px;
+
+  .ud-testimonial-ratings {
+    margin-bottom: 10px;
+
+    i {
+      color: #fbb040;
+    }
+  }
+
+  .ud-testimonial-content {
+    margin-bottom: 25px;
+
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -0.01em;
+      color: #637381;
+    }
+  }
+
+  .ud-testimonial-info {
+    display: flex;
+    align-items: center;
+
+    .ud-testimonial-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+    }
+
+    .ud-testimonial-meta {
+      h4 {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+        color: #969696;
+      }
+    }
+  }
+}
+
+.ud-brands {
+  .ud-title {
+    margin-bottom: 30px;
+
+    h6 {
+      font-weight: normal;
+      font-size: 12px;
+      color: var(--body-color);
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background: #afb2b5;
+        right: -40px;
+        top: 50%;
+      }
+    }
+  }
+
+  .ud-brands-logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -40px;
+
+    .ud-single-logo {
+      margin-right: 40px;
+      margin-bottom: 20px;
+      max-width: 140px;
+
+      &:hover {
+        img {
+          filter: none;
+        }
+      }
+
+      img {
+        filter: grayscale(1);
+        @include transition(0.3s);
+      }
+    }
+  }
+}

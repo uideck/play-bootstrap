@@ -1,0 +1,81 @@
+/* ===== Team CSS ===== */
+.ud-team {
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+  @media #{$xs} {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+.ud-single-team {
+  margin-bottom: 40px;
+
+  .ud-team-image-wrapper {
+    width: 170px;
+    height: 170px;
+    position: relative;
+    margin: 0px auto 25px;
+  }
+  .ud-team-image {
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+
+    &.shape-1 {
+      top: 0;
+      left: 0;
+    }
+    &.shape-2 {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .ud-team-info {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h5 {
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    h6 {
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--body-color);
+    }
+  }
+
+  .ud-team-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 10px;
+      color: #cdced6;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

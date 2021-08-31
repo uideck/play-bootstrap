@@ -1,0 +1,174 @@
+/* ===== Header CSS ===== */
+.ud-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  @include transition(0.3s);
+}
+
+.sticky {
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  @include box-shadow(inset 0 -1px 0 0 rgba(0, 0, 0, 0.1));
+  @include transition(0.3s);
+
+  & .navbar {
+    padding: 8px 0;
+  }
+}
+
+.navbar {
+  padding: 15px 0;
+  border-radius: 5px;
+  position: relative;
+  @include transition(0.3s);
+}
+
+.navbar-brand {
+  padding: 0;
+
+  img {
+    max-width: 160px;
+  }
+}
+
+.navbar-toggler {
+  padding: 0;
+
+  & .toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: var(--white);
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    @include transition(0.3s);
+  }
+
+  &.active {
+    & .toggler-icon {
+      &:nth-of-type(1) {
+        @include transform(rotate(45deg));
+        top: 7px;
+      }
+
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+
+      &:nth-of-type(3) {
+        @include transform(rotate(135deg));
+        top: -7px;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  @media #{$md, $xs} {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 9;
+    @include box-shadow(0px 15px 20px 0px rgba(0, 0, 0, 0.1));
+    padding: 0px;
+  }
+}
+
+.navbar-nav {
+  @media #{$md, $xs} {
+    padding: 20px 30px;
+  }
+
+  & .nav-item {
+    margin-right: 45px;
+    position: relative;
+
+    @media #{$lg} {
+      margin-right: 30px;
+    }
+
+    @media #{$md, $xs} {
+      margin: 0;
+    }
+
+    & a {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--white);
+      @include transition(0.3s);
+      padding: 10px 0;
+      position: relative;
+      font-family: $font-2;
+
+      @media #{$md, $xs} {
+        display: inline-block;
+        padding: 8px 0;
+        color: var(--heading-color);
+      }
+
+      &:hover,
+      &.active {
+        color: var(--heading-color);
+      }
+    }
+  }
+}
+
+.navbar-btn {
+  @media #{$md, $xs} {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    @include transform(translateY(-50%));
+  }
+
+  .ud-main-btn {
+    padding: 8px 16px;
+    background: transparent;
+  }
+
+  .ud-white-btn {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.sticky {
+  & .navbar-toggler {
+    & .toggler-icon {
+      background-color: var(--heading-color);
+    }
+  }
+
+  & .navbar-nav {
+    & .nav-item {
+      & a {
+        color: var(--heading-color);
+
+        &.active,
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  .navbar-btn {
+    .ud-main-btn {
+      &.ud-login-btn {
+        color: var(--heading-color);
+      }
+    }
+
+    .ud-white-btn {
+      background: var(--primary-color);
+      color: var(--white);
+    }
+  }
+}

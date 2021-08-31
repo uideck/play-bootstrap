@@ -1,0 +1,134 @@
+/* ===== Contact CSS ===== */
+.ud-contact {
+  padding: 120px 0px;
+  position: relative;
+
+  @media #{$xs} {
+    padding: 80px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50%;
+    background: #f3f4fe;
+
+    @media #{$lg} {
+      height: 45%;
+    }
+  }
+}
+
+.ud-contact-title {
+  margin-bottom: 150px;
+
+  @media #{$md, $xs} {
+    margin-bottom: 50px;
+  }
+
+  span {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+  }
+}
+
+.ud-contact-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media #{$md, $xs} {
+    margin-bottom: 50px;
+  }
+
+  .ud-single-info {
+    display: flex;
+    max-width: 100%;
+    width: 330px;
+    margin-bottom: 30px;
+  }
+
+  .ud-info-icon {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-right: 24px;
+  }
+
+  .ud-info-meta {
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
+
+.ud-contact-form-wrapper {
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 60px;
+
+  @media #{$xs} {
+    padding: 40px 30px;
+  }
+
+  @media #{$laptop, $lg, $sm} {
+    padding: 50px 40px;
+  }
+
+  .ud-contact-form-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    @media #{$xs} {
+      font-size: 24px;
+    }
+  }
+
+  .ud-form-group {
+    margin-bottom: 25px;
+
+    label {
+      display: block;
+      font-weight: normal;
+      font-size: 12px;
+      font-family: var(--heading-font);
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #f1f1f1;
+      resize: none;
+
+      &:focus {
+        border-color: var(--primary-color);
+      }
+    }
+  }
+}
