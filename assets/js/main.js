@@ -1,16 +1,6 @@
 (function () {
   "use strict";
 
-  // ==== Preloader
-  window.onload = function () {
-    window.setTimeout(fadeout, 500);
-  };
-
-  function fadeout() {
-    document.querySelector(".ud-preloader").style.opacity = "0";
-    document.querySelector(".ud-preloader").style.display = "none";
-  }
-
   // ======= Sticky
   window.onscroll = function () {
     const header_navbar = document.querySelector(".ud-header");
@@ -90,6 +80,9 @@
   navbarToggler.addEventListener("click", function () {
     navbarToggler.classList.toggle("active");
   });
+
+  // ===== wow js
+  new WOW().init();
 
   // ====== scroll top js
   function scrollTo(element, to = 0, duration = 500) {

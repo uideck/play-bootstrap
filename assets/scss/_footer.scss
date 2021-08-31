@@ -86,34 +86,19 @@
     }
   }
 
-  .ud-widget-blog {
-    .ud-latest-blog {
-      margin-bottom: 30px;
+  .ud-widget-brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-      a {
-        display: flex;
-        align-items: center;
+    a {
+      display: block;
+      max-width: 120px;
+      margin-bottom: 20px;
+      margin-right: 20px;
 
-        &:hover {
-          .ud-blog-title {
-            color: var(--primary-color);
-          }
-        }
-
-        .ud-blog-image {
-          width: 70px;
-          height: 48px;
-          border-radius: 3px;
-          margin-right: 20px;
-        }
-
-        .ud-blog-title {
-          font-weight: normal;
-          font-size: 15px;
-          line-height: 24px;
-          color: #f3f4fe;
-          @include transition(0.3s);
-        }
+      @media #{$laptop} {
+        max-width: 100px;
       }
     }
   }

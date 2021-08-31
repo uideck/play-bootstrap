@@ -105,7 +105,6 @@
       @include transition(0.3s);
       padding: 10px 0;
       position: relative;
-      font-family: $font-2;
 
       @media #{$md, $xs} {
         display: inline-block;
@@ -136,6 +135,10 @@
 
   .ud-white-btn {
     background: rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      background: var(--heading-color);
+    }
   }
 }
 
@@ -149,6 +152,7 @@
   & .navbar-nav {
     & .nav-item {
       & a {
+        font-family: var(--body-font);
         color: var(--heading-color);
 
         &.active,
@@ -163,12 +167,20 @@
     .ud-main-btn {
       &.ud-login-btn {
         color: var(--heading-color);
+
+        &:hover {
+          color: var(--primary-color);
+        }
       }
     }
 
     .ud-white-btn {
       background: var(--primary-color);
       color: var(--white);
+
+      &:hover {
+        background: var(--heading-color);
+      }
     }
   }
 }
