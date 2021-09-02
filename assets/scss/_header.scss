@@ -114,7 +114,8 @@
 
       &:hover,
       &.active {
-        color: var(--heading-color);
+        color: var(--white);
+        opacity: 0.5;
       }
     }
   }
@@ -152,12 +153,12 @@
   & .navbar-nav {
     & .nav-item {
       & a {
-        font-family: var(--body-font);
         color: var(--heading-color);
 
         &.active,
         &:hover {
           color: var(--primary-color);
+          opacity: 1;
         }
       }
     }

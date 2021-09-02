@@ -1,0 +1,22 @@
+/* ====== Banner CSS ======= */
+.ud-page-banner {
+  padding-top: 130px;
+  padding-bottom: 80px;
+  background: var(--primary-color);
+  background-image: url("../images/banner/banner-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ud-banner-content {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+
+  h1 {
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 600;
+  }
+}

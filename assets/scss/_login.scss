@@ -1,0 +1,110 @@
+/* ====== Login CSS ====== */
+.ud-login {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ud-login-wrapper {
+  max-width: 500px;
+  margin: auto;
+  background: var(--white);
+  text-align: center;
+  padding: 60px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.05);
+
+  .ud-login-logo {
+    margin-bottom: 30px;
+  }
+}
+
+.ud-login-form {
+  .ud-form-group {
+    margin-bottom: 25px;
+
+    input {
+      width: 100%;
+      border: 2px solid #dddddd;
+      border-radius: 4px;
+      padding: 12px 24px;
+      background: #fcfdfe;
+      color: var(--body-color);
+
+      &:focus {
+        border-color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.ud-socials-connect {
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  p {
+    font-size: 16px;
+    color: var(--body-color);
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    li {
+      width: 100%;
+
+      a {
+        height: 45px;
+        background: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 6px;
+        color: var(--white);
+        font-size: 20px;
+
+        &.facebook {
+          background: #4064ac;
+
+          &:hover {
+            background: #315294;
+          }
+        }
+
+        &.twitter {
+          background: #1c9cea;
+
+          &:hover {
+            background: #0f8bd8;
+          }
+        }
+
+        &.google {
+          background: #d64937;
+
+          &:hover {
+            background: #c53b29;
+          }
+        }
+      }
+    }
+  }
+}
+
+.forget-pass {
+  font-size: 16px;
+  color: var(--body-color);
+  margin-bottom: 8px;
+}
+
+.signup-option {
+  color: var(--body-color);
+  font-size: 16px;
+
+  a {
+    color: var(--primary-color);
+  }
+}

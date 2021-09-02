@@ -11,31 +11,33 @@
 }
 
 .ud-section-title {
-  max-width: 485px;
+  max-width: 620px;
   margin-bottom: 70px;
 
   span {
-    font-family: var(--heading-font);
     font-weight: 600;
     font-size: 18px;
-    letter-spacing: 0.01em;
     color: var(--primary-color);
     margin-bottom: 10px;
   }
 
   h2 {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 45px;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 55px;
     text-transform: capitalize;
     color: var(--heading-color);
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0.5px;
+    font-size: 20px;
+    line-height: 30px;
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -92,16 +94,14 @@
   }
 
   .ud-feature-desc {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.5px;
     margin-bottom: 40px;
   }
 
   .ud-feature-link {
     font-weight: 500;
     color: var(--body-color);
-    font-family: var(--heading-font);
 
     &:hover {
       color: var(--primary-color);

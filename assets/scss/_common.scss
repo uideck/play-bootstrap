@@ -1,11 +1,10 @@
 /*===========================
   COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --body-font: "Roboto", sans-serif;
-  --heading-font: "Montserrat", sans-serif;
+  --font: "Inter", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
   --primary-color: #3056d3;
@@ -13,7 +12,7 @@
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--font);
   font-weight: normal;
   font-style: normal;
   color: var(--body-color);
@@ -74,7 +73,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
   font-weight: 700;
   color: var(--heading-color);
   margin: 0px;
@@ -129,7 +127,7 @@ p {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  font-family: var(--heading-font);
+
   font-weight: 500;
   font-size: 16px;
   border-radius: 5px;

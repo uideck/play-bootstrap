@@ -68,20 +68,17 @@
     color: var(--primary-color);
     margin-bottom: 20px;
     font-weight: 600;
-    font-family: var(--heading-font);
   }
 
   .ud-pricing-header {
     h3 {
       font-weight: 500;
       font-size: 15px;
-      letter-spacing: 1px;
       margin-bottom: 8px;
     }
     h4 {
       font-weight: 600;
       font-size: 26px;
-      letter-spacing: 0.5px;
       color: var(--primary-color);
       margin-bottom: 40px;
     }
@@ -93,7 +90,6 @@
     li {
       font-weight: 500;
       font-size: 15px;
-      letter-spacing: 0.5px;
       margin-bottom: 18px;
     }
   }
