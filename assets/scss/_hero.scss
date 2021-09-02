@@ -87,31 +87,8 @@
 
 .ud-hero-brands-wrapper {
   text-align: center;
-  position: relative;
-  z-index: 2;
-  margin-bottom: -50px;
-}
-
-.ud-hero-brands {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--white);
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  margin: 0px auto;
-  padding: 10px 20px;
-
-  .ud-hero-brand-logo {
-    max-width: 100px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 100%;
-    }
-  }
+  opacity: 0.5;
+  margin-bottom: 80px;
 }
 
 .ud-hero-image {
