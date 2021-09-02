@@ -603,8 +603,18 @@ p {
 
 .ud-hero-brands-wrapper {
   text-align: center;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.ud-hero-brands-wrapper img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   opacity: 0.5;
-  margin-bottom: 80px;
+}
+
+.ud-hero-brands-wrapper img:hover {
+  opacity: 1;
 }
 
 .ud-hero-image {

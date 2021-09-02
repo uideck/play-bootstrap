@@ -87,8 +87,17 @@
 
 .ud-hero-brands-wrapper {
   text-align: center;
-  opacity: 0.5;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  padding: 20px;
+
+  img {
+    transition: all 0.3s;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .ud-hero-image {
