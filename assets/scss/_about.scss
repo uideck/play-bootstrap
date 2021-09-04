@@ -62,6 +62,13 @@
     line-height: 28px;
     margin-bottom: 40px;
   }
+
+  .ud-main-btn {
+    &:hover {
+      background: #2748b4;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .ud-about-image {

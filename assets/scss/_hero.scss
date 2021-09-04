@@ -16,11 +16,11 @@
 .ud-hero-content {
   max-width: 780px;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
   .ud-hero-title {
     color: var(--white);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 45px;
     line-height: 60px;
     text-align: center;
@@ -79,20 +79,28 @@
     color: var(--heading-color);
 
     &:hover {
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+      background: #fefefe;
+    }
+  }
+
+  .ud-link-btn {
+    &:hover {
       color: var(--white);
-      background: var(--heading-color);
+      background: transparent;
+      opacity: 0.5;
     }
   }
 }
 
 .ud-hero-brands-wrapper {
   text-align: center;
-  margin-bottom: 60px;
-  padding: 20px;
+  margin-bottom: 40px;
 
   img {
     transition: all 0.3s;
     opacity: 0.5;
+    max-width: 250px;
 
     &:hover {
       opacity: 1;
