@@ -1,10 +1,10 @@
 /* =======
 
-	Template Name: Play
+	Template Name: Play Bootstrap
 	Author: UIdeck
 	Author URI: https://uideck.com/
-	Support: https://uideck.com/support/
-	Version: 1.1
+	Support: https://github.com/uideck/
+	Version: 1.0
 
 ======== */
 /*===========================
@@ -607,6 +607,7 @@ p {
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   background: #fefefe;
+  color: var(--primary-color);
 }
 
 .ud-hero-buttons .ud-link-btn:hover {
@@ -2609,3 +2610,4 @@ p {
     padding: 10px 20px;
   }
 }
+/*# sourceMappingURL=ud-styles.css.map */
