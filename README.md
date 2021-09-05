@@ -7,7 +7,7 @@ Play comes with all essential sections and elements a complete website needs, ad
 
 
 ## 📃 License
-Since its an open-source template, you can use it with your personal or commercial projects without any attribution or backlink.
+Play is an open-source template, you can use it with your personal or commercial projects without any attribution or backlink.
 
 ## 💙 Support
 You can always support this project by [Starring🌟 This Repository](https://github.com/uideck/play-bootstrap) 
