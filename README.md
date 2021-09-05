@@ -9,7 +9,7 @@ Play comes with all essential sections and elements a complete website needs, ad
 
 ### [🚀 View Demo](https://preview.uideck.com/items/play-bootstrap/)
 
-### [⬇️ Download Now](https://preview.uideck.com/items/play-bootstrap/)
+### [⬇️ Download Now](https://links.uideck.com/play-bootstrap-download)
 
 [![playbootstrap-demo](https://uideck.com/wp-content/uploads/2021/09/play-bootstrap.jpg)](https://preview.uideck.com/items/play-bootstrap/)
 
