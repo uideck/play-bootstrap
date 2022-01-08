@@ -6,6 +6,8 @@ This template is designed and developed in such a way so, that almost anyone can
 
 Play comes with all essential sections and elements a complete website needs, additionally, we also created some separate pages including blogs, login, 404, and some other essential pages from homepage sections.
 
+### This template crafted using 🥞 [TailGrids](https://tailgrids.com/) UI components (design)
+
 
 ### [🚀 View Demo](https://preview.uideck.com/items/play-bootstrap/)
 
