@@ -523,18 +523,18 @@ p {
 /* ===== Hero CSS ===== */
 .ud-hero {
   background: var(--primary-color);
-  padding-top: 130px;
+  padding-top: 90px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ud-hero {
-    padding-top: 160px;
+    padding-top: 90px;
   }
 }
 
 @media (max-width: 767px) {
   .ud-hero {
-    padding-top: 130px;
+    padding-top: 50px;
   }
 }
 
@@ -542,14 +542,17 @@ p {
   max-width: 780px;
   margin: auto;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .ud-hero-content .ud-hero-title {
   color: var(--white);
   font-weight: 700;
-  font-size: 45px;
-  line-height: 60px;
-  text-align: center;
+  height: 5rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
