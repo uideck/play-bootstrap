@@ -18,6 +18,7 @@
   --heading-color: #212b36;
   --primary-color: #1e87ff;
   --white: #ffffff;
+  --button-color: #f77e0e;
 }
 
 body {
@@ -153,7 +154,7 @@ p {
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background: var(--primary-color);
+  background: var(--button-color);
 }
 
 .ud-main-btn:hover {
