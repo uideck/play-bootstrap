@@ -522,7 +522,7 @@ p {
 
 /* ===== Hero CSS ===== */
 .ud-hero {
-  background: var(--primary-color);
+  background: ;
   padding-top: 90px;
 }
 
@@ -549,7 +549,7 @@ p {
 .ud-hero-content .ud-hero-title {
   color: var(--white);
   font-weight: 700;
-  height: 5rem;
+  height: 12rem;
   display: flex;
   align-content: center;
   align-items: center;

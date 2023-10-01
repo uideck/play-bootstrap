@@ -1103,6 +1103,27 @@
 
     window.document.addEventListener("scroll", onScroll);
   </script>
+
+  <!--VANTAJS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "#home",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x254170,
+      shininess: 66.00,
+      waveHeight: 18.00,
+      waveSpeed: 0.45,
+      zoom: 0.77
+    })
+  </script>
 </body>
 
 </html>
