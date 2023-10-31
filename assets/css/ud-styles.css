@@ -18,7 +18,7 @@
   --heading-color: #212b36;
   --primary-color: #1e87ff;
   --white: #ffffff;
-  --button-color: #f70e0e;
+  --button-color: #f77e0e;
 }
 
 body {
@@ -523,7 +523,7 @@ p {
 
 /* ===== Hero CSS ===== */
 .ud-hero {
-  background: ;
+  background: #0ca7f5;
   padding-top: 90px;
 }
 
