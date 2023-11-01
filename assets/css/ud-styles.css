@@ -332,7 +332,7 @@ p {
 }
 
 .navbar-nav .nav-item>a {
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 400;
   color: var(--white);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -523,7 +523,7 @@ p {
 
 /* ===== Hero CSS ===== */
 .ud-hero {
-  background: #0ca7f5;
+  background: #18b6ff;
   padding-top: 90px;
 }
 
