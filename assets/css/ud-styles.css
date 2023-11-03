@@ -602,6 +602,64 @@ p {
   justify-content: center;
 }
 
+
+
+
+
+
+
+.load {
+  animation: slide 10s;
+}
+
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  animation: slide 20s infinite;
+  font-family: var(--font);
+}
+
+.content {
+  color: #fff;
+  width: 100%;
+  height: 75vh;
+}
+
+.principal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+@keyframes slide {
+
+  0%,
+  20% {
+    background-image: url(../images/slide/1.png);
+  }
+
+  25%,
+  45% {
+    background-image: url(../images/slide/2.jpg);
+  }
+
+  50%,
+  70% {
+    background-image: url(../images/slide/3.jpeg);
+  }
+
+  75%,
+  95% {
+    background-image: url(../images/slide/1.png);
+  }
+}
+
 .ud-hero-buttons .ud-main-btn {
   margin: 8px;
 }
