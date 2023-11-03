@@ -26,13 +26,92 @@
   <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
   <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg" />
+  <link rel="shortcut icon" href="assets/images/logo/g19.svg" type="image/svg" />
 
   <!-- ===== All CSS files ===== -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/lineicons.css" />
   <link rel="stylesheet" href="assets/css/ud-styles.css" />
+  <style>
+    .load {
+      animation: slide 10s;
+    }
+
+    .slider {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 10%;
+      animation: slide 40s infinite;
+    }
+
+    .content {
+      color: #fff;
+      width: 100%;
+      height: 75vh;
+
+    }
+
+    .principal {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+
+    @keyframes slide {
+      0% {
+        background-image: url(./assets/images/slide/1.png);
+
+      }
+
+      25% {
+
+        background-image: url(./assets/images/slide/2.jpg);
+
+      }
+
+      25.01% {
+
+        background-image: url(./assets/images/slide/3.jpeg);
+
+      }
+
+      50% {
+
+        background-image: url(./assets/images/slide/2.jpg);
+
+      }
+
+      50.01% {
+
+        background-image: url(./assets/images/slide/3.jpg);
+
+      }
+
+      75% {
+
+        background-image: url(./assets/images/slide/1.jpg);
+
+      }
+
+      75.01% {
+        background-image: url(./assets/images/slide/2.jpg);
+
+      }
+
+      100% {
+
+        background-image: url(./assets/images/slide/3.jpg);
+
+      }
+
+    }
+  </style>
 </head>
 
 <body>
@@ -63,7 +142,7 @@
                   <a class="ud-menu-scroll" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="ud-menu-scroll" href="#features">Features</a>
+                  <a class="ud-menu-scroll" href="#features">Our jobs</a>
                 </li>
                 <li class="nav-item">
                   <a class="ud-menu-scroll" href="#team">Team</a>
@@ -72,58 +151,9 @@
                   <a target="_blank" href="https://api.whatsapp.com/send?phone=12676238538"><i
                       class="lni lni-whatsapp"></i> 267 623-8538</a>
                 </li>
-                <!--
-                <li class="nav-item nav-item-has-children">
-                  <a href="javascript:void(0)"> Pages </a>
-                  <ul class="ud-submenu">
-                    <li class="ud-submenu-item">
-                      <a href="about.html" class="ud-submenu-link">
-                        About Page
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="pricing.html" class="ud-submenu-link">
-                        Pricing Page
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="contact.html" class="ud-submenu-link">
-                        Contact Page
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="blog.html" class="ud-submenu-link">
-                        Blog Grid Page
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="blog-details.html" class="ud-submenu-link">
-                        Blog Details Page
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="login.html" class="ud-submenu-link">
-                        Sign In Page
-                      </a>
-                    </li>
-                    <li class="ud-submenu-item">
-                      <a href="404.html" class="ud-submenu-link">404 Page</a>
-                    </li>
-                  </ul>
-                </li>
-                -->
               </ul>
             </div>
-            <!--
-            <div class="navbar-btn d-none d-sm-inline-block">
-              <a href="login.html" class="ud-main-btn ud-login-btn">
-                Sign In
-              </a>
-              <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                Call NOW
-              </a>
-            </div>
-           -->
+
           </nav>
         </div>
       </div>
@@ -132,41 +162,45 @@
   <!-- ====== Header End ====== -->
 
   <!-- ====== Hero Start ====== -->
-  <section class="ud-hero" id="home">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-            <img src="./assets/images/logo/g19.svg" class="ud-hero-title" alt="">
-            <p class="ud-hero-desc">
-              Come make your budget
-            </p>
-            <ul class="ud-hero-buttons">
-              <li>
-                <a href="tel:+12676238538" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn">
-                  &#9742 Click to call
-                </a>
-              </li>
-              <li>
-                <a href="sms:+12676238538" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-link-btn">
-                  📲 Send a message <i class="lni lni-arrow-right"></i>
-                </a>
-              </li>
-            </ul>
+  <div class="slider">
+    <div class="load">
+    </div>
+    <div class="content">
+      <div class="principal">
+        <section id="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+                  <img src="./assets/images/logo/g19.svg" class="ud-hero-title" alt="">
+                  <p class="ud-hero-desc">
+                    Come make your budget
+                  </p>
+                  <ul class="ud-hero-buttons">
+                    <li>
+                      <a href="tel:+12676238538" rel="nofollow noopener" target="_blank"
+                        class="ud-main-btn ud-white-btn">
+                        &#9742 Click to call
+                      </a>
+                    </li>
+                    <li>
+                      <a href="sms:+12676238538" rel="nofollow noopener" target="_blank"
+                        class="ud-main-btn ud-link-btn">
+                        📲 Send a message <i class="lni lni-arrow-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
+
+                </div>
+              </div>
+            </div>
           </div>
-          <!--
-          <div class="ud-hero-brands-wrapper wow fadeInUp" data-wow-delay=".3s">
-            <img src="assets/images/hero/construct.svg" alt="brand" />
-          </div>-->
-          <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-            <img src="assets/images/hero/image-4.jpg" alt="hero-image" />
-            <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-1" />
-            <img src="assets/images/hero/dotted-shape.svg" alt="shape" class="shape shape-2" />
-          </div>
-        </div>
+        </section>
       </div>
     </div>
-  </section>
+  </div>
   <!-- ====== Hero End ====== -->
 
   <!-- ====== Features Start ====== -->
@@ -284,240 +318,7 @@
   </section>
   <!-- ====== About End ====== -->
 
-  <!-- ====== Pricing Start ====== 
-  <section id="pricing" class="ud-pricing">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title mx-auto text-center">
-            <span>Pricing</span>
-            <h2>Our Pricing Plans</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but the majority have suffered alteration in some form.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row g-0 align-items-center justify-content-center">
-        <div class="col-lg-4 col-md-6 col-sm-10">
-          <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-pricing-header">
-              <h3>STARTING FROM</h3>
-              <h4>$ 19.99/mo</h4>
-            </div>
-            <div class="ud-pricing-body">
-              <ul>
-                <li>5 User</li>
-                <li>All UI components</li>
-                <li>Lifetime access</li>
-                <li>Free updates</li>
-                <li>Use on 1 (one) project</li>
-                <li>4 Months support</li>
-              </ul>
-            </div>
-            <div class="ud-pricing-footer">
-              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
-                Purchase Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-10">
-          <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
-            <span class="ud-popular-tag">POPULAR</span>
-            <div class="ud-pricing-header">
-              <h3>STARTING FROM</h3>
-              <h4>$ 30.99/mo</h4>
-            </div>
-            <div class="ud-pricing-body">
-              <ul>
-                <li>5 User</li>
-                <li>All UI components</li>
-                <li>Lifetime access</li>
-                <li>Free updates</li>
-                <li>Use on 1 (one) project</li>
-                <li>4 Months support</li>
-              </ul>
-            </div>
-            <div class="ud-pricing-footer">
-              <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
-                Purchase Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-10">
-          <div class="ud-single-pricing last-item wow fadeInUp" data-wow-delay=".15s">
-            <div class="ud-pricing-header">
-              <h3>STARTING FROM</h3>
-              <h4>$ 70.99/mo</h4>
-            </div>
-            <div class="ud-pricing-body">
-              <ul>
-                <li>5 User</li>
-                <li>All UI components</li>
-                <li>Lifetime access</li>
-                <li>Free updates</li>
-                <li>Use on 1 (one) project</li>
-                <li>4 Months support</li>
-              </ul>
-            </div>
-            <div class="ud-pricing-footer">
-              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
-                Purchase Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- ====== Pricing End ====== -->
-
-  <!-- ====== FAQ Start ====== 
-  <section id="faq" class="ud-faq">
-    <div class="shape">
-      <img src="assets/images/faq/shape.svg" alt="shape" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="ud-section-title text-center mx-auto">
-            <span>FAQ</span>
-            <h2>Any Questions? Answered</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but the majority have suffered alteration in some form.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
-            <div class="accordion">
-              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>How to use UIdeck?</span>
-              </button>
-              <div id="collapseOne" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
-            <div class="accordion">
-              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>How to download icons from Lineicons?</span>
-              </button>
-              <div id="collapseTwo" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
-            <div class="accordion">
-              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Is GrayGrids part of UIdeck?</span>
-              </button>
-              <div id="collapseThree" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
-            <div class="accordion">
-              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Can I use this template for commercial project?</span>
-              </button>
-              <div id="collapseFour" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
-            <div class="accordion">
-              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Do you have plan releasing Play Pro?</span>
-              </button>
-              <div id="collapseFive" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
-            <div class="accordion">
-              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">
-                <span class="icon flex-shrink-0">
-                  <i class="lni lni-chevron-down"></i>
-                </span>
-                <span>Where and how to host this template?</span>
-              </button>
-              <div id="collapseSix" class="accordion-collapse collapse">
-                <div class="ud-faq-body">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a
-                  type specimen book.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-   ====== FAQ End ====== -->
+  =
 
   <!-- ====== Testimonials Start ====== -->
   <section id="testimonials" class="ud-testimonials">
@@ -619,30 +420,6 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="ud-brands wow fadeInUp" data-wow-delay=".2s">
-
-            <!--
-            <div class="ud-title">
-              <h6>Trusted and Used by</h6>
-            </div>
-            <div class="ud-brands-logo">
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/ayroui.svg" alt="ayroui" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/uideck.svg" alt="uideck" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/graygrids.svg" alt="graygrids" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/lineicons.svg" alt="lineicons" />
-              </div>
-              <div class="ud-single-logo">
-                <img src="assets/images/brands/ecommerce-html.svg" alt="ecommerce-html" />
-              </div>
-            </div>
-            -->
-
           </div>
         </div>
       </div>
@@ -978,45 +755,7 @@
               </ul>
             </div>
           </div>
-          <!--
-          <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
-            <div class="ud-widget">
-              <h5 class="ud-widget-title">Partners</h5>
-              <ul class="ud-widget-brands">
-                <li>
-                  <a href="https://ayroui.com/" rel="nofollow noopner" target="_blank">
-                    <img src="assets/images/footer/brands/ayroui.svg" alt="ayroui" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://ecommercehtml.com/" rel="nofollow noopner" target="_blank">
-                    <img src="assets/images/footer/brands/ecommerce-html.svg" alt="ecommerce-html" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">
-                    <img src="assets/images/footer/brands/graygrids.svg" alt="graygrids" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">
-                    <img src="assets/images/footer/brands/lineicons.svg" alt="lineicons" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://uideck.com/" rel="nofollow noopner" target="_blank">
-                    <img src="assets/images/footer/brands/uideck.svg" alt="uideck" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://tailwindtemplates.co/" rel="nofollow noopner" target="_blank">
-                    <img src="assets/images/footer/brands/tailwindtemplates.svg" alt="tailwindtemplates" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          -->
+
         </div>
       </div>
     </div>
@@ -1102,24 +841,6 @@
     window.document.addEventListener("scroll", onScroll);
   </script>
 
-  <!--VANTAJS
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
-  <script>
-    VANTA.TOPOLOGY({
-      el: ".ud-hero",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xffffff,
-      backgroundColor: 0x428bf0
-    })
-  </script>
--->
 </body>
 
 </html>
