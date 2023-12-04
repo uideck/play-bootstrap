@@ -1,0 +1,51 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Clona o repositório.
+    - uses: actions/checkout@v4
+
+    # Instala PHP e Composer.
+    - name: Configura PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.x
+        tools: composer:v2
+
+    # Valida o arquivo composer.json.
+    - name: Valida o arquivo composer.json e o arquivo composer.lock
+      run: composer validate --strict
+
+    # Armazena as dependências em cache para que não seja necessário
+    # fazer o download a cada nova execução.
+    - name: Armazena pacotes Composer
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    # Instala as dependências.
+    - name: Instala as dependências
+      run: composer install --prefer-dist --no-progress
+
+    # Faz o build do site na pasta temporária.
+    - name: Gerar os arquivos estáticos
+      run: vendor/bin/jigsaw build production
+
+    # Commita os arquivos gerados no passo anterior na branch gh-pages.
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build_production
