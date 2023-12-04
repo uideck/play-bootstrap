@@ -15,7 +15,7 @@
   --font: "Inter", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
-  --primary-color: #3056d3;
+  --primary-color: #184c4e;
   --white: #ffffff;
 }
 
@@ -863,7 +863,7 @@ p {
 }
 
 .ud-about-content .ud-main-btn:hover {
-  background: #2748b4;
+  background: #15967b;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -898,8 +898,8 @@ p {
 }
 
 .ud-single-pricing.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3056d3), to(#179bee));
-  background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#184c4e), to(#13c296));
+  background: linear-gradient(180deg, #184c4e 0%, #13c296 100%);
   border: none;
   padding: 55px 30px;
 }
