@@ -1,2 +1,2 @@
 # Novo site
-Novo site da comunidade PHPRio
+Novo site do LibreSign
