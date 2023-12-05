@@ -1,6 +1,6 @@
 {
-    "name": "phprio/novo-site",
-    "description": "Site do grupo de usuário de PHP do Rio de Janeiro",
+    "name": "libresign/libresign-www",
+    "description": "Site do LibreSign",
     "license": "AGPL-3.0-or-later",
     "require": {
         "tightenco/jigsaw": "^1.7"
